@@ -3,7 +3,6 @@
 After the first death in California of an elderly male, Governor Newsom declared a state of emergency to halt in-person instruction in an effort to stop the spread of Covid-19. Shutdown had a major impact on families. On February 2020: Cases have fallen dramatically prompting schools to reopen. On Oct 2021: Mandate to have children vaccinated by Jan 2022. 
 
 ## Research Questions
-  * How many students were enrolled per county?
   * What was the significant change of enrollment pre-Covid vs during Covid?
   * Did enrollment numbers change due to demographics?
   * Is there a correlation between COVID cases vs students enrolled?
@@ -63,7 +62,7 @@ The calculated average percentage difference shows a slight decrease in the numb
 #### Bar charts of total enrollments vs total enrollments of Socioeconomically Disadvantaged Students in each county
 ![image](https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/SocioSUM.png)
 
-Both graph doesn't show a siginicatn change in total enrollments of _Socioeconomically Disadvantaged Students_
+Both graph don't show a siginicatn change in total enrollments of _Socioeconomically Disadvantaged Students_
 
 ### Migrant Students
 The data held demographics and a comparison between 2020 and 2021, specifically focused on _migrant students_.
@@ -92,7 +91,7 @@ The total number of enrollments of _migrant students_ doesn't change significant
 ![image](https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/MigrantSUM.png)
 
 
-Both graph doesn't show a siginicatn change in total enrollments of _Migrant Students_
+Both graph don't show a siginicatn change in total enrollments of _Migrant Students_
 
 ### Students in Foster Care
 The data held demographics and a comparison between 2020 and 2021, specifically focused on _Students in Foster Care_.
@@ -116,7 +115,7 @@ Preview of the summary table doesn't show significant change in total number of 
 #### Bar charts of total enrollments vs total enrollments of Students in Foster Care in each county
 ![image](https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/FosterSUM.png)
 
-Both graph doesn't show a siginicatn change in total enrollments of _Students in Foster Care_
+Both graphs don't show a siginicatn change in total enrollments of _Students in Foster Care_
 
 ### Students Race/Ethnicity
 
@@ -132,6 +131,42 @@ Both graph doesn't show a siginicatn change in total enrollments of _Students in
 |Two or More Races |3.94% 	      |4.09% 	        |237658 	          |240477      	      |0.158503%|
 |Not Reported 	   |0.85% 	      |0.84% 	        |51484 	            |49143 	            |-0.015919%|
 
-The summary table shows a slightly difference among each race
 
+#### Summary
+As shown in the table above, there was not a big population difference from the 2019-2020 to the 2020-2021 school years. There can also be outside factors that could explain the approx. 1,000,000 loss in students between those including the increasing cost of living and unemployment, and stagnating wages.  Additionally, although the data is as current as November 9th when we pulled the COVID data, we are not able to compare one full year to another full year. Looking at the Enrollment by Race/Ethinicity Count Bar chart shows racial differences by CA County, there seem to be larger enrollment gaps when looking at more populated counties like Los Angeles, Santa Clara, and Orange counties compared to counties with smaller student populations.
 
+#### Pie chart of the percentage of the total number of student enrollment among each race pre-Covid vs. post-Covid
+![](https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/RacePie.png)
+
+#### Stacked Bar Chart
+![](https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/RaceBar.png)
+
+Both graphs furth show that there was not a big population difference from the 2019-2020 to the 2020-2021 school years.
+
+### Students Experiencing Homelessness
+|CountyName 	|Total Enrollment 2020 	|Homeless Count 2020 	|Total Enrollment 2021 |	Homeless Count 2021 |	Homeless Percent 2020 |	Homeless Percent 2021	|			
+| :--------: | :-------------------: | :-----------------: | :------------------: | :------------: |:------------------: |:------------------: |
+|Alameda 	   |222812                	|3062 	               |218094                |2825 	          |1.37% 	|1.30%|
+|Alpine 	    |70 	                   |14 	                 |73 	                  |9 	             |20.00% |12.33%|
+|Amador 	    |3958 	                 |75 	                 |3889 	                | 118 	          |1.89% 	|3.03%|
+|Butte 	     |28777                	 |1234               	 |27794      	          |829 	           |4.29% 	|2.98%|
+|Calaveras 	 |4885 	                 |144 	                |4543 	                |100 	           |2.95% 	|2.20%|
+|Colusa 	    |4698 	                 |224             	    |4635 	                |363 	           |4.77% 	|7.83%|
+|Contra Costa|172089 	               |1974                	|166137 	              |1821 	          |1.15% 	|1.10%|
+|Del Norte 	 |3981 	                 |158                	 |3818 	                |134 	           |3.97% 	|3.51%|
+|El Dorado 	 |29489 	                |560            	     |28414 	               |475           	 |1.90% 	|1.67%|
+|Fresno 	    |203732               	 |1809 	               |201147                |1876          	 |0.89% 	|0.93%|
+
+```python
+ percent_delta = (homeless_df["Homeless Percent 2021"]-homeless_df["Homeless Percent 2020"]).sum()/len(homeless_df)
+```
+There was an overall 0.1% decrease in the total students experiencing homelessness when comparing the school years 2019-2020 and 2020-2021. From the table above, some counties show significant difference in the total number of enrollments of _Students Experiencing Homelessness_
+
+#### Bar graph to vizualize Students Experiencing Homelessness by county
+![](https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/HomelessBar.png)
+
+#### Summary
+The average percentage change in enrollment among **students experiencing homelessness** was a 0.022% _decrease_ between 2019-200 to 2020-2021 school years. When look at the Homeless Count by County Bar Graph, it is notable that the top 5 highest enrollment counties (Los Angeles, Orange County, Riverside County, San Diego County, and San Bernandino County) all experienced notable population decreases of students experiencing homelessness. This could be a sign of _COVID compounding on other financial impacts for the poorest students._
+
+### Covid vs. Enrollments
+#### Heatmap for Total Enrollment for 2020 vs 2021
