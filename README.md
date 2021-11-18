@@ -1,4 +1,4 @@
-# Student-Enrollment-Project
+# School Enrollment & Covid Cases in California by County
 ## Background
 After the first death in California of an elderly male, Governor Newsom declared a state of emergency to halt in-person instruction in an effort to stop the spread of Covid-19. Shutdown had a major impact on families. On February 2020: Cases have fallen dramatically prompting schools to reopen. On Oct 2021: Mandate to have children vaccinated by Jan 2022. 
 
@@ -170,3 +170,24 @@ The average percentage change in enrollment among **students experiencing homele
 
 ### Covid vs. Enrollments
 #### Heatmap for Total Enrollment for 2020 vs 2021
+<p>
+  <img src="https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/heatmap2020.png" width="450" />
+  <img src="https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/heatmap2021.png" width="450" />
+</p>
+
+#### Heatmap for Cumulative Positive Cases 2020 vs 2021
+<p>
+  <img src="https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/positive2020.png" width="450" />
+  <img src="https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/positive%202021.png" width="450" />
+</p>
+
+#### Linear Regression: Cumulative Positive Cases vs Enrollment Total 2020&2021
+<p float="center">
+  <img src="https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/linearRegre%202020.png" width="450" />
+  <img src="https://github.com/ludanzhan/Student-Enrollment-Project/blob/main/Images/linearRegre%202021.png" width="450" />
+</p>
+
+The reported correlation for **2020** linear regression is **r = 0.97159388**. The reported correlation for **2021** linear regression is **r = 0.98350271**.
+This means that **Covid Cases** and **Students Enrollments** are **Highly positively correlated**
+
+
